@@ -44,7 +44,7 @@ import com.jetpackcompose.addressbook.utils.*
  *
  * @since 1.0.
  */
-class LoginActivity : ComponentActivity() {
+class SignInActivity : ComponentActivity() {
 
     private var email by mutableStateOf(TextFieldValue(""))
     private var password by mutableStateOf(TextFieldValue(""))
@@ -99,7 +99,7 @@ class LoginActivity : ComponentActivity() {
                 )
 
                 Text(
-                    text = "Please login to continue",
+                    text = "Please Sign In to continue",
                     textAlign = TextAlign.Center,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
@@ -173,7 +173,7 @@ class LoginActivity : ComponentActivity() {
                     backgroundColor = MaterialTheme.colors.primary
                 ) {
                     Text(
-                        modifier = Modifier.padding(16.dp), text = "Login", style = TextStyle(
+                        modifier = Modifier.padding(16.dp), text = "Sign In", style = TextStyle(
                             color = white
                         ), textAlign = TextAlign.Center
                     )
@@ -205,7 +205,7 @@ class LoginActivity : ComponentActivity() {
                             .clickable(onClick = {
                                 navigateToSignup()
                             }),
-                        text = "Don't have an Account? Register!",
+                        text = "Don't have an Account? Sign up",
                         style = TextStyle(color = MaterialTheme.colors.primary)
                     )
                 }
@@ -215,7 +215,7 @@ class LoginActivity : ComponentActivity() {
 
     /**
      * Check enter credentials is valid or not.
-     * Proceed for login if credentials valid.
+     * Proceed for sign in if credentials valid.
      */
     private fun checkCredentials() {
 
@@ -229,9 +229,9 @@ class LoginActivity : ComponentActivity() {
                     setLoginCredentials()
                     navigateToMain()
 
-                } else toast(this@LoginActivity, "Invalid password")
+                } else toast(this@SignInActivity, "Invalid password")
 
-            } else toast(this@LoginActivity, "Invalid credentials. Register account first.")
+            } else toast(this@SignInActivity, "Invalid credentials. Register account first.")
         }
     }
 
@@ -259,7 +259,7 @@ class LoginActivity : ComponentActivity() {
     }
 
     /**
-     * After successfully login navigate to [MainActivity].
+     * After successfully sign in navigate to [MainActivity].
      */
     private fun navigateToMain() {
         val intent = Intent(this, MainActivity::class.java)
@@ -273,11 +273,11 @@ class LoginActivity : ComponentActivity() {
     private fun isEmailPasswordValid(email: String?, password: String?): Boolean {
         return Validation(this).run {
             isEmailValid(email = email).also {
-                this@LoginActivity.emailError = !it
-                this@LoginActivity.email = TextFieldValue(text = (email ?: "").trim())
+                this@SignInActivity.emailError = !it
+                this@SignInActivity.email = TextFieldValue(text = (email ?: "").trim())
             } && isPasswordValid(password = password).also {
-                this@LoginActivity.passwordError = !it
-                this@LoginActivity.password = TextFieldValue(text = (password ?: "").trim())
+                this@SignInActivity.passwordError = !it
+                this@SignInActivity.password = TextFieldValue(text = (password ?: "").trim())
             }
         }
     }
@@ -288,7 +288,7 @@ class LoginActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun DefaultPreview() {
-        AddressBookJetpackComposeTheme(darkTheme = true) {
+        AddressBookJetpackComposeTheme(darkTheme = false) {
             InitUI()
         }
     }

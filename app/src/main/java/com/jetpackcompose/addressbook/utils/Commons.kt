@@ -14,7 +14,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
 import androidx.lifecycle.MutableLiveData
-import com.jetpackcompose.addressbook.ui.theme.Purple500
 
 fun <E> mutableListWithSize(size: Int = 0): MutableList<E?> {
     return MutableList(size) {

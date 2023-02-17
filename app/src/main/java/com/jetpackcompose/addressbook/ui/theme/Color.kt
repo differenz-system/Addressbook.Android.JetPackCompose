@@ -21,4 +21,5 @@ val white10 = Color(0x1AFFFFFF)
 val white20 = Color(0x33FFFFFF)
 val white50 = Color(0x80FFFFFF)
 
+fun wb() = if (isDarkMode) white else black
 fun wb05() = if (isDarkMode) white05 else black05

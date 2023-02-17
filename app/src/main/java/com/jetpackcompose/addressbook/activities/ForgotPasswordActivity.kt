@@ -84,7 +84,7 @@ class ForgotPasswordActivity : ComponentActivity() {
                         Icon(
                             imageVector = Icons.Filled.ArrowBack,
                             contentDescription = "",
-                            tint = white
+                            tint = wb()
                         )
                     }
                     ShowLottieLogo()
@@ -190,7 +190,7 @@ class ForgotPasswordActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun DefaultPreview() {
-        AddressBookJetpackComposeTheme(darkTheme = true) {
+        AddressBookJetpackComposeTheme(darkTheme = false) {
             InitUI()
         }
     }

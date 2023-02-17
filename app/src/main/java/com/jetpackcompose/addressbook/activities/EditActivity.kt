@@ -303,7 +303,7 @@ class EditActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun DefaultPreview() {
-        AddressBookJetpackComposeTheme(darkTheme = true) {
+        AddressBookJetpackComposeTheme(darkTheme = false) {
             InitUI()
         }
     }

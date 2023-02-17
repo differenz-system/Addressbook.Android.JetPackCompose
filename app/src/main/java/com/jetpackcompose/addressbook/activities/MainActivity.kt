@@ -169,7 +169,6 @@ class MainActivity : ComponentActivity() {
 
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Center) {
                         ShowLottieLogo()
-                        //Text(text = "No Data")
                     }
                     return
                 }
@@ -200,7 +199,7 @@ class MainActivity : ComponentActivity() {
                                         navigateToEdit(addressBook)
                                     }) {
                                         Icon(
-                                            imageVector = Icons.Filled.EditNote,
+                                            imageVector = Icons.Filled.Edit,
                                             contentDescription = "Edit",
                                         )
                                     }
@@ -259,13 +258,13 @@ class MainActivity : ComponentActivity() {
     /**
      * Close AddressBook database.
      * Clear current user [Credentials].
-     * Logout from app and navigate user to [LoginActivity].
+     * Logout from app and navigate user to [SignInActivity].
      */
     private fun logout() {
         addressViewModel.closeDatabase().also {
             val cleared = Credentials(this).clearLoginCredentials()
             if (cleared) {
-                navigateToLogin()
+                navigateToSignIn()
             } else toast(this, "Something went wrong")
         }
     }
@@ -273,19 +272,19 @@ class MainActivity : ComponentActivity() {
     /**
      * Delete AddressBook database.
      * Delete [Credentials] permanently.
-     * Logout from app and navigate user to [LoginActivity].
+     * Logout from app and navigate user to [SignInActivity].
      */
     private fun deletePermanently() {
         addressViewModel.clearAndCloseDatabase()
         Credentials(this).clearAccount()
-        navigateToLogin()
+        navigateToSignIn()
     }
 
     /**
-     * After successful logout navigate to [LoginActivity].
+     * After successful logout navigate to [SignInActivity].
      */
-    private fun navigateToLogin() {
-        val intent = Intent(this, LoginActivity::class.java)
+    private fun navigateToSignIn() {
+        val intent = Intent(this, SignInActivity::class.java)
         startActivity(intent)
         finish()
     }

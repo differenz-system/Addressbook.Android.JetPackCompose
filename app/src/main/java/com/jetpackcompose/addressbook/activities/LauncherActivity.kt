@@ -51,7 +51,7 @@ class LauncherActivity : ComponentActivity() {
                 if (isLottiePlaying) {
                     ShowLottieLogo()
                     Handler(Looper.myLooper()!!).postDelayed({
-                        navigationToLogin()
+                        navigationToSignIn()
                     }, 4000)
                 }
             }
@@ -84,8 +84,8 @@ class LauncherActivity : ComponentActivity() {
         )
     }
 
-    private fun navigationToLogin() {
-        val intent = Intent(this, LoginActivity::class.java)
+    private fun navigationToSignIn() {
+        val intent = Intent(this, SignInActivity::class.java)
         startActivity(intent)
         finish()
     }
@@ -93,7 +93,7 @@ class LauncherActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun DefaultPreview() {
-        AddressBookJetpackComposeTheme(darkTheme = true) {
+        AddressBookJetpackComposeTheme(darkTheme = false) {
             InitUI()
         }
     }

@@ -194,7 +194,7 @@ class SignupActivity : ComponentActivity() {
                     backgroundColor = MaterialTheme.colors.primary
                 ) {
                     Text(
-                        modifier = Modifier.padding(16.dp), text = "Signup", style = TextStyle(
+                        modifier = Modifier.padding(16.dp), text = "Sign up", style = TextStyle(
                             color = white
                         ), textAlign = TextAlign.Center
                     )
@@ -213,7 +213,7 @@ class SignupActivity : ComponentActivity() {
                             .clickable(onClick = {
                                 finish()
                             }),
-                        text = "Already have an account? Login!",
+                        text = "Already have an account? Sign In",
                         style = TextStyle(color = MaterialTheme.colors.primary)
                     )
                 }
@@ -246,7 +246,7 @@ class SignupActivity : ComponentActivity() {
     }
 
     /**
-     * Finish [LoginActivity] before navigate to [MainActivity].
+     * Finish [SignInActivity] before navigate to [MainActivity].
      */
     private fun finishLoginActivity() {
         setResult(RESULT_OK)
@@ -291,7 +291,7 @@ class SignupActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun DefaultPreview() {
-        AddressBookJetpackComposeTheme(darkTheme = true) {
+        AddressBookJetpackComposeTheme(darkTheme = false) {
             InitUI()
         }
     }

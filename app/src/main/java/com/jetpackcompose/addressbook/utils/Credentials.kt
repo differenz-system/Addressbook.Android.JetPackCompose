@@ -19,7 +19,7 @@ class Credentials(
     private var accountPreferences: SharedPreferences
 
     /**
-     * Current active login preference.
+     * Current active sign in preference.
      */
     private var activeLoginPreferences: SharedPreferences
 
