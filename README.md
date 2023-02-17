@@ -10,7 +10,7 @@ The app does the following:
 
 ## Pre-requisites
 - Android device or emulator running API 21 (5.0 - Lollipop) or above
-- [Android Studio Chipmunk | 2021.2.1](https://developer.android.com/studio/index.html)
+  - [Android Studio Dolphin | 2021.3.1](https://developer.android.com/studio/index.html)
 
 ## Getting Started
 1. [Install Android Studio](https://developer.android.com/studio/index.html)
