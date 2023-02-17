@@ -6,6 +6,9 @@ This repository contains **Address Book** application for Android Jetpack Compos
 The app does the following:
 1. **Login:** User can login via email/password.
 2. **Home:** It will list all the save contacts, having the option to add a new contact on the top right and also to edit and remove the contact.
+    1. This screen will show a list of contacts which are already added in the system.
+    2. Users can Add a new contact. Find option at Top right corner.
+    3. Users can also Edit and Delete particular contact.
 3. **Create new contact:** User can add a new contact to his address book by filling details here.
 
 ## Pre-requisites
