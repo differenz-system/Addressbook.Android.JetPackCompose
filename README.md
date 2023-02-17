@@ -9,7 +9,7 @@ The app does the following:
 3. **Create new contact:** User can add a new contact to his address book by filling details here.
 
 ## Pre-requisites
-- Android device or emulator running API 23 (6.0 - Marshmallow) or above
+- Android device or emulator running API 21 (5.0 - Lollipop) or above
 - [Android Studio Chipmunk | 2021.2.1](https://developer.android.com/studio/index.html)
 
 ## Getting Started
