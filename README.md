@@ -28,7 +28,7 @@ The app does the following:
 - **Framework:** MVVM
 
 ## Screenshots
-<img src="https://github.com/differenz-system/Addressbook.Android.JetPackCompose/blob/master/screenShots/login.jpg" width="280"> <img src="https://github.com/differenz-system/Addressbook.Android.JetPackCompose/blob/master/screenShots/list.jpg" width="280"> <img src="https://github.com/differenz-system/Addressbook.Android.JetPackCompose/blob/master/screenShots/detail.jpg" width="280">
+<img src="https://github.com/differenz-system/Addressbook.Android.JetPackCompose/blob/30b463cb0174869e95b54e12c2e216a8cb8a53b1/screenShots/login.jpg" width="280"> <img src="https://github.com/differenz-system/Addressbook.Android.JetPackCompose/blob/30b463cb0174869e95b54e12c2e216a8cb8a53b1/screenShots/list.jpg" width="280"> <img src="https://github.com/differenz-system/Addressbook.Android.JetPackCompose/blob/30b463cb0174869e95b54e12c2e216a8cb8a53b1/screenshots/details.jpg" width="280">
 
 ## Support
 If you've found an error in this sample, please [report an issue](https://github.com/differenz-system/Addressbook.Android.JetPackCompose/issues/new). You can also send your feedback and suggestions at info@differenzsystem.com
