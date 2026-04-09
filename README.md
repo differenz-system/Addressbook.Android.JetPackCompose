@@ -12,8 +12,8 @@ The app does the following:
 3. **Create new contact:** User can add a new contact to his address book by filling details here.
 
 ## Pre-requisites
-- Android device or emulator running API 21 (5.0 - Lollipop) or above
-  - [Android Studio Dolphin | 2021.3.1](https://developer.android.com/studio/index.html)
+- Android device or emulator running API 23 (5.0 - Lollipop) or above
+- [Android Studio Otter 3 Feature Drop | 2025.2.3](https://developer.android.com/studio/index.html)
 
 ## Getting Started
 1. [Install Android Studio](https://developer.android.com/studio/index.html)
